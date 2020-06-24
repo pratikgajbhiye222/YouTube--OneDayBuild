@@ -15,6 +15,9 @@
 		0932AB8F2491704D00E211E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0932AB8D2491704D00E211E8 /* LaunchScreen.storyboard */; };
 		0932AB9A2491704E00E211E8 /* OneDayBuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0932AB992491704E00E211E8 /* OneDayBuildTests.swift */; };
 		0932ABA52491704E00E211E8 /* OneDayBuildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0932ABA42491704E00E211E8 /* OneDayBuildUITests.swift */; };
+		0944DFC4249CC1F7001F381E /* ViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0944DFC3249CC1F7001F381E /* ViewTableViewCell.swift */; };
+		097E2B9124A27BE5000ED739 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097E2B9024A27BE5000ED739 /* WebKit.framework */; };
+		09802AB724A2729700E20D3F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09802AB624A2729700E20D3F /* DetailsViewController.swift */; };
 		09A88BE524922E7700C1B6AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A88BE424922E7700C1B6AB /* Constants.swift */; };
 		09A88BE7249231AC00C1B6AB /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A88BE6249231AC00C1B6AB /* Videos.swift */; };
 		09A88BE92492320400C1B6AB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A88BE82492320400C1B6AB /* Model.swift */; };
@@ -53,6 +56,9 @@
 		0932ABA02491704E00E211E8 /* OneDayBuildUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneDayBuildUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0932ABA42491704E00E211E8 /* OneDayBuildUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayBuildUITests.swift; sourceTree = "<group>"; };
 		0932ABA62491704E00E211E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0944DFC3249CC1F7001F381E /* ViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTableViewCell.swift; sourceTree = "<group>"; };
+		097E2B9024A27BE5000ED739 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		09802AB624A2729700E20D3F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		09A88BE424922E7700C1B6AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		09A88BE6249231AC00C1B6AB /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		09A88BE82492320400C1B6AB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				097E2B9124A27BE5000ED739 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +98,7 @@
 				0932AB982491704E00E211E8 /* OneDayBuildTests */,
 				0932ABA32491704E00E211E8 /* OneDayBuildUITests */,
 				0932AB802491704500E211E8 /* Products */,
+				097E2B8F24A27BE5000ED739 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +117,10 @@
 			children = (
 				0932AB822491704500E211E8 /* AppDelegate.swift */,
 				0932AB842491704500E211E8 /* SceneDelegate.swift */,
-				0932AB862491704500E211E8 /* ViewController.swift */,
 				09A88BE424922E7700C1B6AB /* Constants.swift */,
-				09A88BE6249231AC00C1B6AB /* Videos.swift */,
-				09A88BEA24924E5A00C1B6AB /* Response.swift */,
-				09A88BE82492320400C1B6AB /* Model.swift */,
-				0932AB882491704500E211E8 /* Main.storyboard */,
+				0944DFC7249CC21A001F381E /* Models */,
+				0944DFC6249CC214001F381E /* Views */,
+				0944DFC5249CC20D001F381E /* Controllers */,
 				0932AB8B2491704D00E211E8 /* Assets.xcassets */,
 				0932AB8D2491704D00E211E8 /* LaunchScreen.storyboard */,
 				0932AB902491704D00E211E8 /* Info.plist */,
@@ -138,6 +144,50 @@
 				0932ABA62491704E00E211E8 /* Info.plist */,
 			);
 			path = OneDayBuildUITests;
+			sourceTree = "<group>";
+		};
+		0944DFC5249CC20D001F381E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0932AB862491704500E211E8 /* ViewController.swift */,
+				09802AB624A2729700E20D3F /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0944DFC6249CC214001F381E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0944DFC3249CC1F7001F381E /* ViewTableViewCell.swift */,
+				0932AB882491704500E211E8 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0944DFC7249CC21A001F381E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0944DFC8249CC220001F381E /* Helpers */,
+				09A88BE6249231AC00C1B6AB /* Videos.swift */,
+				09A88BEA24924E5A00C1B6AB /* Response.swift */,
+				09A88BE82492320400C1B6AB /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0944DFC8249CC220001F381E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		097E2B8F24A27BE5000ED739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				097E2B9024A27BE5000ED739 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0944DFC4249CC1F7001F381E /* ViewTableViewCell.swift in Sources */,
 				0932AB872491704500E211E8 /* ViewController.swift in Sources */,
+				09802AB724A2729700E20D3F /* DetailsViewController.swift in Sources */,
 				0932AB832491704500E211E8 /* AppDelegate.swift in Sources */,
 				0932AB852491704500E211E8 /* SceneDelegate.swift in Sources */,
 				09A88BE92492320400C1B6AB /* Model.swift in Sources */,
